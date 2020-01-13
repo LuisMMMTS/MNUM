@@ -1,0 +1,14 @@
+gauss seidel e jacobi
+
+!!!!!IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+MATRIZ DOS COEFICIENTES TEM DE SER DIAGONALMENTE DOMINANTE, ou seja o elemento na diagonal tem de ser superior a todos os outros NA MESMA LINHA
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+necessito dos pontos de adivinha iniciais (os guesses iniciais)
+isolar em cada equação do sistema uma incógnita.
+
+EM JACOBI SUBSTITUI-SE CADA ELEMENTO PELO CALCULADO NA ITERAÇÃO ANTERIOR
+EM SEIDEL SUBSTITUI-SE CADA ELEMENTO PELO CALCULADO NA ITERAÇÃO ATUAL NA EQUAÇÃO ANTERIOR, LOGO É MAIS RÁPIDO
+
+ESTES METODOS TERMINAM COM O CÁLCULO DO ERRO QUANDO A POSSIVEL SOLUÇÃO ENTRE CADA ITERAÇÃO VARIA MENOS DO QUE O ERRO

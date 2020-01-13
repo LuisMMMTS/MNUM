@@ -1,0 +1,38 @@
+Integração numerica de equações diferenciais
+
+METODO DE EULER
+
+temos o ponto inicial (x,y) e a formula da derivada
+traçamos a tangente nesse ponto anterior e obtemos a previsão no passo h=1
+
+o novo y=(xn+1 -xn)*m+yatual   m==derivada
+logo
+y=h*derivada+yatual
+
+xn+1=xn+h
+yn+1=yn+h*y'(xn,yn)
+
+
+é um metodo de primeira ordem logo o quociente de convergencia tem de dar 2
+
+QC=(s'-s)/(s''-s')
+
+e''=s''-s'
+
+
+
+RK2
+xn+1=xn+h
+yn+1=yn+h*y'(xn+h/2,yn+h/2*y'(xn,yn))
+qc=4
+e''=(s''-s')/3
+
+
+
+
+RK4
+
+
+
+QC=16
+E''=(S''-S')/15

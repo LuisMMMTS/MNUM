@@ -1,0 +1,8 @@
+tens um tanque que enche com a funcao v(h)=pi*h^2*(9-h)/3
+
+queres v=30    //ou seja tens de tirar 30 à unção paraa procurares o zero com estes metodos
+
+a=1.9
+b=2.5
+
+ou guess =1.9

@@ -1,0 +1,27 @@
+metodo khalesky
+
+a*x=b->decomposição LU =>a matriz A e o produto da matriz l e matriz u
+
+!!!!!!!!!!!!é necessário calcular L e U intercaladamente!!!!!!!!!!!!!!!!
+
+1º linha e 1º coluna de U
+
+	Li1=A1j e U1j=Aj/L11
+	PS A1j=1coluna da matriz A
+
+A partir daqui:
+	Lij=Aij-somatorio[k=1,j-1](Lik*Ukj
+	Uij=1/Lij*(Aij-....
+
+A*x=b
+L*U*x=b
+u*x=y->variavel temporaria
+
+L*y=b e U*x=y
+
+
+
+MATRIZ U É A MATRIX UPPER LOGO DIAGONAL INFERIOR É ZERO
+MATRIZ L É A MATRIZ LOWER LOGO DIAGONAL SUPERIOR É ZERO
+
+U tem dia gonal unitaria 

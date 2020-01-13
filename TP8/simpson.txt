@@ -1,0 +1,3 @@
+No método de simpson o h é metade do que o dado. Tipo se dividirmos o intervalo em 2 na verdade temos que dividir em 4 porque precisamos de um ponto médio para definir a parábola
+coeficiente de convergência=16
+e''=(s''-s)/15

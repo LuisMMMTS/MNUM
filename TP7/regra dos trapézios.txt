@@ -1,0 +1,38 @@
+substituir a área por baixo da curva por trapézios
+somar trapézios
+
+((y0+y(0+h))/2)*h
+
+
+ou então (h/2)*[y(0)+2y(1)+2y(2)+2y(n-1)+y(n)]
+
+ps. utilizamos h/2 porque na formula do trapézio tinha de se dividir por 2
+em que h=intervalo de integração a dividir pelo numero de trapezios a utilizar(numero de divisoes feitas a essa área)
+
+
+
+CONTROLO DO ERRO
+
+atraves do teorema de Lagrange
+ -baseado no intervalo
+ -baseado na diferença do intervalo
+ -baseado no majorante do erro
+
+
+Compara-se as últimas 2,4 e 8 iterações ->a diferença faz-se sentir no h utilizado
+	tem-se que soluçao+erro=solução'+erro'=soluçao''+erro''
+	E o erro vem da formula de lagrange
+
+E(h)=-((xn-x0)*h**2)/12 * f''(E)
+em E'(h)=tudo igual mas com h/2
+em E''(h)=tudo igual mas com h/4
+
+se dividirmos E/E' obtemos 4, o mesmo para e'/e''
+
+logo E=4e' e E=16e''
+
+substituindo nas equações iniciais S'-S=0.75*E e S''-S'=(3/16)*E
+
+e obtemos a noção de quociente de convergência
+(S'-S)/(s''-S')=4
+se esta igualdade se verificar a solução obtida por s'' pode ser aceite, senão largamos o S e criamos um s''' que é o duplo de s'

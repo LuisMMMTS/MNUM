@@ -1,0 +1,4 @@
+excel->file->options->advanced->set precision as deplayed->todos os cálculos terão commo base o resultado apresentado com erro e não o resultado real(que o excel não consegue dar display mas tem em memória
+
+o senhor ingenuo
+selecionar a coluna, botao direito, format cells, category:number, 3 decimal places

@@ -1,0 +1,25 @@
+OTIMIZAÇÃO UNIDIMENSIONAL
+
+	-pesquisa de extremos da função
+
+pesquisar minimo e maximo
+e depois aplicar os metodos para reduzir intervalo
+
+regra aurea
+encontram-se dois pontos cujas distancias sejam menores que as dos extremos originais
+deita- se fora o ponto que garantidamente não precisamos dele
+
+	x3=x1+A(x2-x1)
+	x4=x1+B(x2-x1)
+	B=(sqrt(5)-1)/2
+	A=B**2
+
+	se f(x3)<f(x4)->x1=x1 and x2=x4
+	se f(x4)<f(x3)->x1=x3 and X2=x2
+
+	para quando o intervalo for pequeno o suficiente
+
+
+tmb existe o metodo dos terços e dos quadrados, mas este e o mais usado
+
+EX)f(x)=(2x+1)**2-5cos(10x) determine min e maximo no intervalo [-1,0] com criterio paragem abs(x2-x1)<10**-3

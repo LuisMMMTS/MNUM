@@ -1,0 +1,20 @@
+metodo da corda e geralemtne mais rápido do que bisseção, vamos ver se isso acontece sempre
+
+
+METODO DE NEWTON/tangente
+
+método não intervalar
+damos um guess e ela progride a partir daí
+tracamos reta tangente a funcao nesse ponto e onde essa reta bater no eixo dos x, temos  xn+1
+
+
+NAO ESQUECER DE CALCULAR A DERIVADA DA FUNCAO
+
+(Yn+1-Yn)=m*(Xn+1-Xn)
+m=derivada. passamos m para o outro lado
+(Yn+1-Yn)/f'(xn)=Xn+1-xn
+como o nosso yn+1 é 0 pelo pressuposto do método, então obtemos a expressão:
+
+		Xn+1=Xn-f(Xn)/F'(xn)
+
+	PROBLEMAS: NÃO PODEMOS TER DERIVADA=0, LOGO TER CUIDADO COM O GUESS INICIAL

@@ -1,0 +1,52 @@
+1)GRADIENTE
+xn+1=xn-h*gradientef(xn) em que gradiente é a derivada direcional da incognita que esta a ser calculada
+yn+1=yn-h*gradientef(yn)
+
+se fn+1<fn h aumenta
+se fn+1>fn não efetiva o passo e reduz o h
+
+ou seja, se correr bem damos o incentivo para ir mais rápido, se correr mal cagamos para essa iteração e fazemos com passo menor
+
+
+exercicio
+f(x,y)=y**2-2*x*y-6*y+2*x**2+12
+x0,y0=0,0
+h0=1
+xn+1-xn<10**3
+yn+1-yn<10**3
+
+gradiente de f=[-2y+4x e 2y-2x-6]
+
+
+
+2)quadrática
+
+xn+1=xn-h^-1*gradientef(xn) em que gradiente é a derivada direcional da incognita que esta a ser calculada
+h^-1 é o inverso do determinante da matriz sn
+matriz sn é o determinante da matriz das segundas derivadas da funcao, que garante sempre que estamos a caminhar para o minimo logo não é necessário testar o crescimento da funcao
+
+
+exercicio
+
+h=[4 -2
+   -2 2 ]=1*2-(-2*-2)=4
+portanto
+xn+1=xn-1/4*(-2y+4x)
+yn+1=yn-1/4*(2y-2x-6)
+
+
+
+
+3)levemberg-marquardt
+
+é o melhor dos dois mundos
+
+xn+1=xn-hlm(xi)
+hlm=lambda*gradientef(xi)+H^-1*gradiente de f(xi)
+
+se fn+1>fn, lambda=lambda+delta lambda
+se fn+1<fn, lambda=lambda-delta lambda
+
+
+exercicio
+same as before lambda=1  delta lambda=0.1

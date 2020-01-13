@@ -1,0 +1,29 @@
+ZEROS DE FUNÇÕES
+1º passo saber se tem zeros e quantos sao no intervalo considerado->fazer plot no maxima
+	ln=log no máxima
+
+
+METODO DA BISSEÇÃO
+define um intervalo e vai reduzindo o intervalo até encontrar o zero. Divide o intervalo a meio e verifica se esta nalguma das metades
+	x=(a+b)/2
+	verificar se está à esquerda ou à direita através da mudança de sinal
+	garantir que não há mais do que 1 zero nesse intervalo
+	multiplicar o ya e yx e se for inferior a zero então o zero está nesse intervalo
+	x passa a ser b e repete-se o processo
+
+METODO DA CORDA/FALSA POSIÇÃO
+o metodo da bisseção reduz cegamente o intervalo e não quer saber se y está proximo do zero ao longo do tempo
+unimos os pontos a e b com uma corda e xn é a interseção da corda com eixo dos x
+x=(f(a)*b-f(b)*a)/(f(a)-f(b))
+na prática e encontrar o zero da corda
+aplicamos outra vez f(a)*xn<0 para saber qual o ponto a atualizar
+
+
+
+Condições de paragem
+	precisao absoluta: |xn+1-xn|<=erro
+	critério de precisão relativa: (xn+1-xn)/xn<=erro
+	diferença função:|(f(xn+1)-f(xn)|<=erro
+	nº iterações
+
+xn e xn+1 são o valor atual de x e o valor na iteração seguinte

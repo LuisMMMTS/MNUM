@@ -1,0 +1,8 @@
+integral[0,4](1-nepper^(-2x)) n0=4
+	a)aplicar simpson e calcular 3 QC sucessivos
+	b)aplicar trapezios e calcular 3 qc sucessivos
+2)
+x	-2	0	2	4	6	8	10
+f(x)	35	5	-10	2	5	3	20
+
+	aplicar simpson e trapezios

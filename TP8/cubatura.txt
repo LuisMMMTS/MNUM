@@ -1,0 +1,16 @@
+CUBATURA
+
+funções 3d
+sobrepomos malha na nossa funçao
+aplicamos formula de simpson para os pontos na malha
+
+hx*hy/9*(e0+4e1+16e2)
+
+e0-soma dos vértices
+e1-soma dos pontos médios
+e2-soma do ponto central
+
+
+ou com metodo dos trapezios
+
+hx*hy/4*(e0+2e1+4e2)
